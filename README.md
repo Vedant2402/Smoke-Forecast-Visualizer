@@ -12,9 +12,9 @@ An Android app built with Kotlin and Jetpack Compose that displays real-time wea
 
 ## Screenshots
 
-| Weather Screen | Wildfire Map |
+| Weather Screen | Wildfire Map | Temperature Map | Weather Search |
 
-![image](https://github.com/user-attachments/assets/4f0b66a1-3fb5-4866-a4f1-cbd640680d11)
+![image](https://github.com/user-attachments/assets/5c9be2ba-31c5-4c2f-a37f-76c4959448cb)
 
 ![image](https://github.com/user-attachments/assets/c9729d8d-0a56-4d8f-850e-28cd22348e9a)
 
@@ -35,6 +35,78 @@ An Android app built with Kotlin and Jetpack Compose that displays real-time wea
 - **Retrofit** - API client
 - **Coil** - Image loading
 
+---
+
+# Kotlin Functional Programming Concepts Used
+
+### ✅ 1. Collections
+**Used in:** `InformationActivity.kt`, `MapsActivity.kt`
+
+**Examples:**
+- `val levels = listOf(...)` and `val pollutants = listOf(...)` in `InformationActivity`.
+- `val frameIds = (0..23).map { ... }` in `MapsActivity`.
+
+---
+
+### ✅ 2. Control Flow
+**Used in:** All activities (`when`, `if`, `for`)
+
+**Examples:**
+- `when` in `MapsActivity.kt`: `getColorFromAQI(...)`
+- `if (latRow == null || lonRow == null || densRow == null) continue` – classic `if/else` usage.
+
+---
+
+### ✅ 3. Lambda Expressions
+**Used in:** `WeatherSearchActivity.kt`, `MapsActivity.kt`
+
+**Examples:**
+- `levels.forEach { level -> ... }` (lambda passed to `forEach`).
+- Retrofit callbacks: `onResult: (Current) -> Unit`, passed as lambdas to `fetchWeather(...)`.
+
+---
+
+### ✅ 4. Classes / Data Classes
+**Used in:** `WeatherSearchActivity.kt`
+
+**Examples:**
+- `data class Current(...)`, `AirQuality(...)`, `WeatherResponse(...)`.
+
+These are plain Kotlin data classes with auto-generated `toString()`, `equals()`, `copy()`.
+
+---
+
+### ✅ 5. Safe Calls & Elvis Operator
+**Used in:** `WeatherSearchActivity.kt`
+
+**Examples:**
+- `weather?.temp_c` (safe call).
+- `current.air_quality.pm2_5 ?: "N/A"` (Elvis operator).
+
+---
+
+### ✅ 6. Generics
+**Used in:** `Tasks.whenAllSuccess<DocumentSnapshot>(...)` in `MapsActivity.kt`
+
+**Example:**
+- This uses a generic method where `DocumentSnapshot` is the type parameter.
+
+---
+
+### ✅ 7. Exception Handling
+**Used in:** `MainActivity.kt`, `WeatherSearchActivity.kt`
+
+**Examples:**
+- `try { ... } catch (e: Exception)` blocks wrap `Intent` and network calls.
+
+---
+
+### ✅ Bonus: MVC or MVVM Pattern
+- Your app uses UI logic separation, particularly via ViewModel-like delegation (e.g., `WeatherSearchActivity` calling `fetchWeather` with callbacks).
+- Your Composable UI code is mostly decoupled from business logic, which is clean MVVM-style separation.
+
+---
+# Perform After Installation.
 ## API Configuration
 
 1. Create `secrets.properties` in your project root
