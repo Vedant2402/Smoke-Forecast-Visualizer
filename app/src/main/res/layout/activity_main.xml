@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smoke Forecast Visualizer"
+        android:textSize="24sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Display Weather Button -->
+    <Button
+        android:id="@+id/displayWeatherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Weather"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Display Wildfire Map Button -->
+    <Button
+        android:id="@+id/displayWildfireMapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Wildfire Map"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Profile Page Button -->
+    <Button
+        android:id="@+id/profilePageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Page"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
