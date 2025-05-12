@@ -2,12 +2,12 @@
 
 An Android app built with Kotlin and Jetpack Compose that displays real-time weather data and wildfire maps to help track smoke dispersion patterns.
 
-## Contribution -
+## Contributions -
 1. Vedant Kankate - Home Page, AQI Information & All files Integrations
 2. Utkarsh Phatale - Smoke Visualizer
 3. Harita Parikh - Weather API, Weather Search
 4. darpan Patel - Weather Visualizer
-5. Matthew graca - Database Preprocessing
+5. Matthew Graca - Database Preprocessing
 
 ## Features
 
