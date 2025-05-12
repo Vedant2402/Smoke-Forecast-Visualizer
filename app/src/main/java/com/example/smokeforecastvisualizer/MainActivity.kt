@@ -105,7 +105,7 @@ fun HomePage(modifier: Modifier = Modifier) {
                 },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(text = "DISPLAY SMOKE VISUALIZER")
+                Text(text = "SMOKE VISUALIZER")
             }
 
             Button(
@@ -125,7 +125,27 @@ fun HomePage(modifier: Modifier = Modifier) {
                 },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(text = "DISPLAY WEATHER")
+                Text(text = "WEATHER")
+            }
+
+            Button(
+                onClick = {
+                    try {
+                        val intent = Intent(context, WeatherMapActivity::class.java).apply {
+                            putExtra("map_type", "weather")
+                        }
+                        context.startActivity(intent)
+                    } catch (e: Exception) {
+                        Toast.makeText(
+                            context,
+                            "Failed to open map: ${e.localizedMessage}",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(text = "WEATHER MAP")
             }
         }
     }
