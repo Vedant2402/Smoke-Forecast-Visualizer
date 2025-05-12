@@ -42,7 +42,8 @@ An Android app built with Kotlin and Jetpack Compose that displays real-time wea
 - **Google Maps SDK** - Map visualization
 - **Retrofit** - API client
 - **Coil** - Image loading
-
+. 
+AQI Info website -> https://www.airnow.gov/aqi/aqi-basics/
 ---
 
 # Kotlin Functional Programming Concepts Used
