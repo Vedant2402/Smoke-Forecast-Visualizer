@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +24,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />
 
-        <!-- MainActivity -->
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -31,33 +36,33 @@
             </intent-filter>
         </activity>
 
-        <!-- MapsActivity -->
+        <!-- Smoke Visualizer Map Activity -->
         <activity
             android:name=".MapsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_maps"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:label="Smoke Visualizer"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
-        <!-- InformationActivity -->
+        <!-- Weather Visualizer Activity -->
+        <activity
+            android:name=".WeatherMapActivity"
+            android:exported="true"
+            android:label="Weather Map"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- Weather Search Activity -->
+        <activity
+            android:name=".WeatherSearchActivity"
+            android:exported="false"
+            android:label="Weather Search" />
+
+        <!-- AQI Info Activity -->
         <activity
             android:name=".InformationActivity"
             android:exported="false"
             android:label="AQI Information"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
-
-        <!-- WeatherSearchActivity -->
-        <activity
-            android:name=".WeatherSearchActivity"
-            android:exported="false"
-            android:label="Weather Search"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
-
-    <!-- Permissions -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
 </manifest>
