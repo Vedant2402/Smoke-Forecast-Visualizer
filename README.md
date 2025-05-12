@@ -30,7 +30,7 @@ An Android app built with Kotlin and Jetpack Compose that displays real-time wea
 
 - **Kotlin** - Primary programming language
 - **Jetpack Compose** - Modern UI toolkit
-- **Open-Meteo API** - Weather data source
+- **Weather API** - Weather data source
 - **NASA FIRMS API** - Wildfire data source
 - **Google Maps SDK** - Map visualization
 - **Retrofit** - API client
