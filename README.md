@@ -12,9 +12,9 @@ An Android app built with Kotlin and Jetpack Compose that displays real-time wea
 
 ## Screenshots
 
-| Weather Screen | Wildfire Map | Temperature Map | Weather Search |
+| Homepage | Weather Screen | Wildfire Map | Temperature Map | Weather Search |
 
-![image](https://github.com/user-attachments/assets/5c9be2ba-31c5-4c2f-a37f-76c4959448cb)
+![image](https://github.com/user-attachments/assets/b4635840-c03e-4355-b692-142400d6c6f0)
 
 ![image](https://github.com/user-attachments/assets/c9729d8d-0a56-4d8f-850e-28cd22348e9a)
 
@@ -24,6 +24,7 @@ An Android app built with Kotlin and Jetpack Compose that displays real-time wea
 
 ![image](https://github.com/user-attachments/assets/5ec90f74-a80c-420b-99b1-f7043224ed09)
 
+![temperature](https://github.com/user-attachments/assets/dc263547-29c0-489e-827d-6c5e432a090c)
 
 ## Technologies
 
